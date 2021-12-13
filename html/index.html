@@ -1,16 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>&#128148;&#128148;&#128148;Hi~~ Clock Gallery</title>
+    <title>&#127812;SUPER MARIO&#127812;</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=PT+Serif:wght@400;700&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Titillium+Web:wght@200;300;400;600;700;900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/common.css" />
@@ -32,33 +29,46 @@
     <script src="../js/main.js" defer></script>
   </head>
   <body>
-    <header id="header">
-      <h1 id="logo">
-        <img src="../images/hublot02/logo.png" alt="" />
-      </h1>
-      <nav id="gnb">
-        <ul>
-          <li data-json="../data/bigbang.json" class="selected"><a href="">BIG BANG</a></li>
-          <li data-json="../data/classic.json"><a href="">CLASSIC</a></li>
+    <div id="wrap">
+      <header id="header">
+        <h1 id="logo">
+          <img src="../images/logo.png" alt="" />
+        </h1>
+        <nav id="gnb">
+          <ul>
+            <li data-json="../data/mario.json" class="selected">
+              <span></span>
+              <a href="">MARIOS</a>
+              <span></span>
+            </li>
+            <li data-json="../data/monster.json">
+              <span></span>
+              <a href="">MONSTERS</a>
+              <span></span>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main id="main" class="swiper">
+        <ul class="swiper-wrapper" id="itemList">
+          <!-- <div class="section" style="">
+          <div class="imgBox"><img src="" alt=""></div>
+          <div class="info">
+            <h2 class="title"></h2>
+            <p class="desc"></p>
+            <a href="" class="more" target=""></a>
+          </div>
+        </div> -->
         </ul>
-      </nav>
-      <div class="util">
-        <a href="">HUBLOT MALL</a>
-        <a href=""><span class="material-icons">favorite_border</span></a>
-        <a href=""><span class="material-icons">search</span></a>
-      </div>
-    </header>
-    <main id="main">
-      <!-- <div class="section">
-        <div class="info">
-          <p class="category">BIG BANG</p>
-          <h2 class="title">UNICO BERLUTI COLD BROWN</h2>
-          <p class="depth">45MM</p>
-          <p class="price">CHF 24,800</p>
-        </div>
-      </div> -->
-    </main>
-    <div class="pagination"></div>
-    <div id="bgParticle"></div>
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </main>
+    </div>
+
+    <!-- <div id="loop">
+      <img src="../images/supermario/supermario01.png" alt="" />
+    </div> -->
   </body>
 </html>
